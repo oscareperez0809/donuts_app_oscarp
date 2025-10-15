@@ -1,11 +1,18 @@
+<<<<<<< HEAD
 # donuts_app
+=======
+# donuts_app_8sc
+>>>>>>> 189d8ba73ad086d3cee19000ce1b61b257cbc49d
 
 A new Flutter project.
 
 ## Getting Started
 
+<<<<<<< HEAD
 my name is Oscar Tadeo Pérez Bocos
 
+=======
+>>>>>>> 189d8ba73ad086d3cee19000ce1b61b257cbc49d
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:

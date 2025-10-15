@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "donuts_app",
     "short_name": "donuts_app",
+=======
+    "name": "donuts_app_8sc",
+    "short_name": "donuts_app_8sc",
+>>>>>>> 189d8ba73ad086d3cee19000ce1b61b257cbc49d
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
