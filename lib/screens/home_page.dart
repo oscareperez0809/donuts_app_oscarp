@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 import 'package:flutter/material.dart';
 import 'package:donuts_app/utils/my_tab.dart';
-
-=======
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
->>>>>>> 189d8ba73ad086d3cee19000ce1b61b257cbc49d
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,20 +7,14 @@ class HomePage extends StatefulWidget {
   @override
   State<HomePage> createState() => _HomePageState();
 }
-<<<<<<< HEAD
 
 class _HomePageState extends State<HomePage> {
-  List<Widget> myTabs = [
-    //donut
-    const MyTab(iconPath: 'lib/icons/donut.png', iconName: 'Donut'),
-    //burger
-    const MyTab(iconPath: 'lib/icons/burger.png', iconName: 'Burger'),
-    //smoothie
-    const MyTab(iconPath: 'lib/icons/smoothie.png', iconName: 'Smoothie'),
-    //pancake
-    const MyTab(iconPath: 'lib/icons/pancakes.png', iconName: 'Pancakes'),
-    //pizza
-    const MyTab(iconPath: 'lib/icons/pizza.png', iconName: 'Pizza'),
+  List<Widget> myTabs = const [
+    MyTab(iconPath: 'lib/icons/donut.png', iconName: 'Donut'),
+    MyTab(iconPath: 'lib/icons/burger.png', iconName: 'Burger'),
+    MyTab(iconPath: 'lib/icons/smoothie.png', iconName: 'Smoothie'),
+    MyTab(iconPath: 'lib/icons/pancakes.png', iconName: 'Pancakes'),
+    MyTab(iconPath: 'lib/icons/pizza.png', iconName: 'Pizza'),
   ];
 
   @override
@@ -36,21 +24,22 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          //icono de la izquierda
+          elevation: 0,
+          // icono de la izquierda
           leading: Icon(Icons.menu, color: Colors.grey[800]),
-          //icono de la derecha
+          // icono de la derecha
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 24.0),
-              child: Icon(Icons.person),
+              child: Icon(Icons.person, color: Colors.grey[800]),
             ),
           ],
         ),
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            //texto principal
             const Padding(
-              padding: EdgeInsets.only(left: 24.0),
+              padding: EdgeInsets.only(left: 24.0, bottom: 16),
               child: Row(
                 children: [
                   Text(
@@ -64,46 +53,24 @@ class _HomePageState extends State<HomePage> {
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
-
-            //pestañas (TabBar)
             TabBar(tabs: myTabs),
-
-            //contenido de pestañas tabbar view
-            //carrito car
+            Expanded(
+              child: TabBarView(
+                children: [
+                  Center(child: Text('Donut Page')),
+                  Center(child: Text('Burger Page')),
+                  Center(child: Text('Smoothie Page')),
+                  Center(child: Text('Pancake Page')),
+                  Center(child: Text('Pizza Page')),
+                ],
+              ),
+            ),
           ],
         ),
-=======
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        //icono de la izquierda
-        leading: Icon(Icons.menu, color: Colors.grey[800]),
-        //icono de la derecha
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 24.0),
-            child: Icon(Icons.person),
-          ),
-        ],
-      ),
-      body: const Column(
-        children: [
-          //texto principal
-
-          //pestañas tab bar
-
-          //contenido de pestañas tabbar view
-
-          //carrito car
-        ],
->>>>>>> 189d8ba73ad086d3cee19000ce1b61b257cbc49d
       ),
     );
   }
