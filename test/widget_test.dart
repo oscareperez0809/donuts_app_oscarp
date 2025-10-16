@@ -8,11 +8,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-<<<<<<< HEAD
-import 'package:donuts_app/main.dart';
-=======
+// Asegúrate de que el nombre del paquete coincida con el tuyo.
+// Si tu proyecto se llama donuts_app_8sc, deja esta línea:
 import 'package:donuts_app_8sc/main.dart';
->>>>>>> 189d8ba73ad086d3cee19000ce1b61b257cbc49d
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

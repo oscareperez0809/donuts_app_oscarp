@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:donuts_app/screens/home_page.dart';
+import 'package:donuts_app_8sc/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
