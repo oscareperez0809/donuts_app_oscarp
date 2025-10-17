@@ -4,7 +4,7 @@ import 'package:donut/utils/donut_tile.dart';
 class DonutTab extends StatelessWidget {
   //lista de donas
   final List DonutsSale = [
-    //flavor donut
+    //donut flavor
     //donut price
     //donut color
     //donut image
@@ -48,11 +48,11 @@ class DonutTab extends StatelessWidget {
       //lo que se va a construir en el grid
       itemBuilder: (context, index) {
         return DonutTile(
-          donutflavor: DonutsSale[index][0],
-          donutprice: DonutsSale[index][1],
-          donutcolor: DonutsSale[index][2],
-          donutimage: DonutsSale[index][3],
-          donutsupplier: DonutsSale[index][4],
+          DonutFlavor: DonutsSale[index][0],
+          DonutPrice: DonutsSale[index][1],
+          DonutColor: DonutsSale[index][2],
+          DonutImage: DonutsSale[index][3],
+          DonutSupplier: DonutsSale[index][4],
         );
       },
     );
